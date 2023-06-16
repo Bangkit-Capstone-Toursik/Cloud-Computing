@@ -18,7 +18,7 @@ const cors = require("cors");
 // main app
 const app = express();
 app.use(cors({origin: true}));
-const API_KEY = "AIzaSyCFZzVbZ7XOG5qkCnhoZTTfcuPUPos_88Y";
+const API_KEY = "OURS";
 
 // main database preference
 const db = admin.firestore();
