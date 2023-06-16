@@ -202,12 +202,20 @@ app.get("/api/getByName/:name", (req, res) => {
 // Import the required modules
 const datafix = require("./datafix.json"); // Import your data and label mapping
 const label_mapping = require("./label_mapping.json"); // Import your data and label mapping
+const regency_num = require("./regency_num.json"); // Import regency name and regency number
 app.use(express.json());
 
 app.get("/recommendations/:price/:regency", (req, res) => {
   const input_price = parseInt(req.params.price); // Input price
-  const input_regency = parseInt(req.params.regency); // Input regency
+  const input_regency = req.params.regency; // Input regency (as string)
   // Content-based filtering code to generate recommendations
+  // Get the regency label based on the input regency name
+  const regency = regency_num.find((item) => item.Regency === input_regency);
+  if (!regency) {
+    return res.status(400).json({error: "Invalid regency name"});
+  }
+  const input_regency_label = regency["Regency Num"];
+
   // De-encode the output labels
   const inverse_mapping = {};
   for (const item of label_mapping) {
@@ -215,7 +223,7 @@ app.get("/recommendations/:price/:regency", (req, res) => {
   }
 
   // Filter the data based on input regency
-  const filtered_data = datafix.filter((item) => item.Regency === input_regency);
+  const filtered_data = datafix.filter((item) => item.Regency === input_regency_label);
 
   // Create a list of items where each item is represented as (price, name)
   const items = filtered_data.map((item) => [
