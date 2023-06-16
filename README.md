@@ -200,10 +200,10 @@ Response
 }
 ```
 
-4. Postman
+### 4. Postman
 - Before deploy the API, test the API using Postman.
 
-5. Deploy a Backend API
+### 5. Deploy a Backend API
 - Use `firebase deploy` in CMD to deploy the Backend API.
 
-6. Integrate the API in Android Studio by Mobile Development path.
+### 6. Integrate the API in Android Studio by Mobile Development path.
