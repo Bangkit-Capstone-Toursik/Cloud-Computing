@@ -24,12 +24,12 @@ This is a documentation for TourSik's Backend/Cloud Computing.
 
 Base URL API: http://127.0.0.1:5001/projectcapstone-5c13a/us-central1/app
 
-1. Get Specific Data (name)
+### Get Specific Data (name)
 URL
-/api/getByName/:Name
+`/api/getByName/:Name`
 
 Method
-GET
+`GET`
 
 Response
 ```
