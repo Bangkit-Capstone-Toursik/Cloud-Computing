@@ -79,14 +79,15 @@ Response
 }
 ```
 
-2. Get Specific Data (category)
+### Get Specific Data (category)
 URL
-/api/getByCategory/:Category
+`/api/getByCategory/:Category`
 
 Method
-GET
+`GET`
 
 Response
+```
 {
     "status": "Berhasil",
     "data": [
@@ -105,15 +106,17 @@ Response
         ...
     }
 }
+```
 
-3. Get Specific Data (populer)
+### Get Specific Data (populer)
 URL
-/api/getByHighRating
+`/api/getByHighRating`
 
 Method
-GET
+`GET`
 
 Response
+```
 {
     "status": "Berhasil",
     "data": [
@@ -132,15 +135,17 @@ Response
         ...
     }
 }
+```
 
-4. Get Spesific Data (recommended, gratis)
+### Get Spesific Data (recommended, gratis)
 URL
-/api/getByPrice/0.0
+`/api/getByPrice/0.0`
 
 Method
-GET
+`GET`
 
 Response
+```
 {
     "status": "Berhasil",
     "data": [
@@ -159,15 +164,17 @@ Response
         ...
      }
 }
+```
 
-5. Get Recommendations (ML model)
+### Get Recommendations (ML model)
 URL
-/recommendations/:Price(total)/:Regency
+`/recommendations/:Price(total)/:Regency`
 
 Method
-GET
+`GET`
 
 Response
+```
 {
     "status": "Berhasil",
     "data": [
@@ -191,11 +198,12 @@ Response
         }
     ]
 }
+```
 
 4. Postman
-Before deploy the API, test the API using Postman.
+- Before deploy the API, test the API using Postman.
 
 5. Deploy a Backend API
-Use "firebase deploy" in CMD to deploy the Backend API.
+- Use `firebase deploy` in CMD to deploy the Backend API.
 
 6. Integrate the API in Android Studio by Mobile Development path.
