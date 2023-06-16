@@ -32,6 +32,7 @@ Method
 GET
 
 Response
+```
 {
     "status": "Berhasil",
     "data": {
@@ -76,6 +77,7 @@ Response
         ]
     }
 }
+```
 
 2. Get Specific Data (category)
 URL
