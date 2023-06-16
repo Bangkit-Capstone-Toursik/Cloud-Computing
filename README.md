@@ -8,15 +8,16 @@ This is a documentation for TourSik's Backend/Cloud Computing.
 ### 3. After add the database, check the database to know that all data are correct.
 
 ## How to make an backend API
-1. Write an Express server app using Javascript and install all dependencies
+
+### 1. Write an Express server app using Javascript and install all dependencies
 Or you can use this folder:
 ...
 Don't forget to login to Firebase and connect Firebase project with Google Console Platform project. Use your own Service Account Key from your Firebase project and API_KEY for Google Maps API and Places API from API Services in Google Console Platform.
 
-2. Cloud Functions
+### 2. Cloud Functions
 Because we will use Cloud Functions, check if you enable Cloud Functions in Google Console Platform.
 
-3. URL API
+### 3. URL API
 We make 5 endpoints in total. 4 endpoints get data from database (Firestore) and 1 endpoint from ML model.
 
 Base URL API: http://127.0.0.1:5001/projectcapstone-5c13a/us-central1/app
