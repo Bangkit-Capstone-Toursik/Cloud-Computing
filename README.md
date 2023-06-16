@@ -206,4 +206,4 @@ Response
 ### 5. Deploy a Backend API
 - Use `firebase deploy` in CMD to deploy the Backend API.
 
-### 6. Integrate the API in Android Studio by Mobile Development path.
+### 6. Integrate the API in Android Studio by Mobile Development path
