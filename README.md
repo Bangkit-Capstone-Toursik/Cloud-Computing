@@ -1,11 +1,13 @@
 # Cloud Computing Documentation
 This is a documentation for TourSik's Backend/Cloud Computing.
 
+
 ## How to make a database in Cloud Firestore
 
 ### 1. Go to https://console.cloud.google.com/firestore and enable native mode.
 ### 2. Add the dataset to the database. You can use Open Editor in Cloud Shell.
 ### 3. After add the database, check the database to know that all data are correct.
+
 
 ## How to make an backend API
 
